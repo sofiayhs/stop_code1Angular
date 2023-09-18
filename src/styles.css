@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: sans-serif;
+    padding:1em;
+}
+
+.prodotti{
+    padding:0.6em;
+    border: 1px solid black;
+    text-align: center; 
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    width:200px;
+    padding:10px;
+    border:2px solid rgba(128, 128, 128, 0.588);
+}
+
+tr:hover{
+    background-color: rgba(246, 246, 119, 0.73);
+}
+img{
+    width:150px;
+}

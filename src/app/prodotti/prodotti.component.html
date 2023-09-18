@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>ID </th>
+        <th>CATEGORY </th>
+        <th>RATING</th>
+        <th>IMAGE</th>
+        <th>TITLE</th>
+        <th>PRICE</th>
+        <th>DESCRIPTION </th>
+    </tr>
+    <tr class="prodotti" *ngFor="let prodotto of prodotti">
+        <td>{{prodotto.id}}</td>
+        <td>{{prodotto.category | uppercase}}</td>
+        <td><h3> &#9733; {{prodotto.rating.rate}}</h3>
+            <h4>{{prodotto.rating.count}} recensioni</h4>
+        </td>
+        <td><img *ngIf="prodotto.rating.rate > 3" [src]="prodotto.image" alt="img prodotto"></td>
+        <td>{{prodotto.title}}</td>
+        <td>{{prodotto.price}}€</td>
+        <td>{{prodotto.description}}</td>
+    </tr>
+</table>
